@@ -10,7 +10,7 @@ function get_percentChange(percentChange24h) {
 
 function get_price(price) {
     if (price.toFixed(2) <= 0) {
-        return price.toFixed(5)
+        return price.toFixed(6)
     }
     else {
         return price.toFixed(2);
