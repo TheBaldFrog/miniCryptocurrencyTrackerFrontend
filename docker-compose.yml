@@ -4,4 +4,4 @@ services:
     build: .
     ports:
       - '80:4173'
-    command: npm run preview
+    command: npm run preview --host
