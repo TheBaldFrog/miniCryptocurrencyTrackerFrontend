@@ -10,4 +10,9 @@ export default defineConfig({
             plugins: [tailwindcss()],
         },
     },
+    server: {
+        host: '0.0.0.0',
+        strictPort: true,
+        port: 80,
+    }
 })
