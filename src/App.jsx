@@ -12,7 +12,7 @@ const App = () => {
     const [currencyData, setCurrencyData] = useState(null)
 
     const fetchCurrencies = () => {
-        axios.get("http://44.193.26.129/cryptocurrencies/").then((response) => {
+        axios.get("http://44.211.162.169:8000/cryptocurrencies/").then((response) => {
             const currenciesResponse = response.data
             const menuItems = [
                 {
@@ -29,7 +29,7 @@ const App = () => {
     }
 
     const fetchCurrency = () => {
-        axios.get(`http://44.193.26.129/cryptocurrencies/${currencyId}`).then((response) => {
+        axios.get(`http://44.211.162.169:8000/cryptocurrencies/${currencyId}`).then((response) => {
             setCurrencyData(response.data)
             console.log(response.data)
         })
